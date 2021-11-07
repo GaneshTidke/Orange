@@ -25,11 +25,7 @@ WebDriver driver = new ChromeDriver();
 return driver;
 	}
 	
-	public static WebDriver openFirefoxBrowser () {
-		System.setProperty("webdriver.gecko.driver", "\"D:\\DATA\\Pramod\\DATA-PRAMOD\\Resume\\testing\\Firefox\\geckodriver-v0.30.0-win64\\geckodriver.exe");
-WebDriver driver = new FirefoxDriver();
-return driver;
-	}
+	
 	@BeforeTest
 @Parameters ("browser")
 public void beforetest(String browser) {
